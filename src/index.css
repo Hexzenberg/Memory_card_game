@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root {
+  --dark: #646344;
+  --darkest: #000000;
+  --blue: #a0aeed;
+  --gray: #a3aab8;
+  --light: #ffffff;
+  --bubbles: #E3F4FE;
+  --purple: #4d80e6;
+  --green: #8af2c9;
+}
+
+html,
+body {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header {
+  background-image: linear-gradient(to right, var(--green), var(--bubbles), var(--light), var(--light), var(--blue));
+  height: 20vh;
+}
+
+.main {
+  background-image: linear-gradient(to right, var(--green), var(--bubbles), var(--light), var(--bubbles), var(--blue));
+  height: 75vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-image: linear-gradient(to right, var(--green), var(--bubbles), var(--light), var(--light), var(--blue));
+  height: 15vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background-image: linear-gradient(to right, var(--darkest), var(--gray));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+h3 {
+  background-image: linear-gradient(to right, var(--darkest), var(--gray));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
